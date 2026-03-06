@@ -1,0 +1,17 @@
+.input-content {
+    width: 50vh;
+    height: 10vh;
+    margin-top: 5vh;
+}
+
+.input-content input {
+    width: 50vh;
+    height: 5vh;
+    border-radius: 15px;
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.input-content input::placeholder {
+    color: rgba(245, 245, 220, 0.712);
+}

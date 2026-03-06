@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
+import InputName from "../components/InputName";
+import "./Home.css"
 
 function Home() {
   const [msg, setMsg] = useState("");
@@ -17,7 +19,9 @@ function Home() {
         <Header />
       </div>
       <div className="card">
-        {/* Tarjetas de pregunta y respuesta */}
+        <div className="card-content">
+          <InputName />
+        </div>
       </div>
     </div>
 
