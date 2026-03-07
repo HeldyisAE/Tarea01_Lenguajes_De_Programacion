@@ -1,0 +1,43 @@
+.reset-button {
+    cursor: pointer;
+    background: transparent;
+    margin-left: 2vh;
+    height: 10vh;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease;
+    padding: 0
+}
+
+.reset-button:active {
+    transform: scale(0.9);
+}
+
+.reset-button:hover {
+    border: 1px solid transparent;
+}
+
+.reset-button:focus,
+.reset-button:focus-visible {
+    outline: none;
+    border: none;
+}
+
+.reset-button-logo {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: rainbow-animation 6s linear infinite;
+}
+
+.reset-button-logo:active {
+    transform: scale(0.9);
+}
+
+@keyframes rainbow-animation {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: green; }
+  66%  { color: cyan; }
+  83%  { color: blue; }
+  100% { color: violet; }
+}

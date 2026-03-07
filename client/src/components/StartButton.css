@@ -1,0 +1,44 @@
+.btn-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 12px 24px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+
+    background-color: #1f1f23;
+    color: white;
+
+    transition: all 0.25s ease;
+}
+
+.start-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+}
+
+.start-button:active {
+    transform: scale(0.95);
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}

@@ -1,7 +1,14 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Header from "../components/Header";
+import InputName from "../components/InputName";
+import StartButton from "../components/StartButton";
+import "./Home.css"
 
 function Home() {
   const [msg, setMsg] = useState("");
+  const [name, setName] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/api")
@@ -9,7 +16,29 @@ function Home() {
       .then(data => setMsg(data));
   }, []);
 
-  return <h1>{msg}</h1>;
+  function handleStart() {
+    if (name.trim() === "") {
+      alert("Debes ingresar un nombre");
+      return;
+    }
+
+    navigate("/game");
+  }
+
+  return (
+    <div className="container">
+      <div className="top-container"> 
+        <Header />
+      </div>
+      <div className="card">
+        <div className="card-content">
+          <InputName name={name} setName={setName}/>
+          <StartButton onStart={handleStart} />
+        </div>
+      </div>
+    </div>
+
+  )
 }
 
 export default Home;
