@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { PlayerContext } from "../contexts/PlayerContext";
 import Header from "../components/Header";
 import InputName from "../components/InputName";
 import StartButton from "../components/StartButton";
@@ -9,6 +10,7 @@ function Home() {
   const [msg, setMsg] = useState("");
   const [name, setName] = useState("");
   const navigate = useNavigate();
+  const { setPlayerName } = useContext(PlayerContext);
 
   useEffect(() => {
     fetch("/api")
@@ -22,6 +24,7 @@ function Home() {
       return;
     }
 
+    setPlayerName(name);
     navigate("/game");
   }
 
