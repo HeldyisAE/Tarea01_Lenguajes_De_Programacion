@@ -1,0 +1,47 @@
+.player-tag {
+  padding: 2px 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 0.5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: rainbow-text 6s ease infinite;
+  transition: all 0.2s ease;
+}
+
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.player-tag:hover {
+  transform: scale(0.95);
+}
