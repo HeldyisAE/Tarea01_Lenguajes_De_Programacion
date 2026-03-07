@@ -1,9 +1,11 @@
 .reset-button {
     cursor: pointer;
     background: transparent;
+    margin-left: 2vh;
     height: 10vh;
     border: 1px solid transparent;
     transition: transform 0.3s ease;
+    padding: 0
 }
 
 .reset-button:active {
