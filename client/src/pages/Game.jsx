@@ -9,7 +9,6 @@ function Game() {
       </div>
       <div className="card">
         <div className="card-content">
-          {/* Tarjetas de pregunta y respuesta */}
         </div>
       </div>
     </div>
