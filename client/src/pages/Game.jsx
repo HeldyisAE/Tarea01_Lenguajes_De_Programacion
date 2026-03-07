@@ -1,4 +1,5 @@
 import "./Game.css";
+import QuestionBox from "../components/QuestionBox";
 import Header from "../components/Header";
 
 function Game() {
@@ -9,6 +10,7 @@ function Game() {
       </div>
       <div className="card">
         <div className="card-content">
+          <QuestionBox />
         </div>
       </div>
     </div>
