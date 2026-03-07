@@ -1,0 +1,72 @@
+.option-boxes {
+  position: relative;
+  min-height: 8vh;
+  padding: 14px 18px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.15),
+    rgba(255, 165, 0, 0.15),
+    rgba(255, 255, 0, 0.15),
+    rgba(0, 255, 0, 0.15),
+    rgba(0, 255, 255, 0.15),
+    rgba(0, 0, 255, 0.15),
+    rgba(238, 130, 238, 0.15)
+  );
+
+  background-size: 400% 400%;
+  animation: rainbow-soft 10s ease infinite;
+  border: 1px solid rgba(58, 51, 51, 0.418);
+  box-shadow: 0 10px 30px rgba(226, 226, 226, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  margin-bottom: 2vh;
+}
+
+@keyframes rainbow-soft {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.option-boxes::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 30, 0.35);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.option-boxes button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: rgba(119, 114, 114, 0.418);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.option-boxes button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.option-boxes button:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
