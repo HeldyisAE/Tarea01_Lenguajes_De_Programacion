@@ -1,9 +1,14 @@
 import "./InputName.css"
 
-function InputName() {
+function InputName({ name, setName }) {
     return(
         <div className="input-content">
-            <input placeholder="Ingrese su nombre"/>
+            <input 
+            type="text"
+            placeholder="Ingrese su nombre"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            />
         </div>
     );
 }
