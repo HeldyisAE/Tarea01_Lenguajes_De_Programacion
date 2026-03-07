@@ -8,7 +8,7 @@ export default function Header() {
                 <ResetButton />
             </div>
             <div className="header-center">
-                <h2>Preguntados</h2>
+                <h2>Pregunta2</h2>
             </div>
             <div className="header-right">
 
