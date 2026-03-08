@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import "./QuestionBox.css";
 
-function QuestionBox({ questionData, onNextQuestion, isGameOver }) {
+function QuestionBox({ questionData, onNextQuestion, isGameOver, onAnswer }) {
 
   const [options, setOptions] = useState([]);
   const [selectedOption, setSelectedOption] = useState(null);
   const [feedback, setFeedback] = useState(null);
   const [isDisabled, setIsDisabled] = useState(false);
+  
 
   useEffect(() => {
     const shuffled = [...questionData.distractions]
@@ -29,6 +30,9 @@ function QuestionBox({ questionData, onNextQuestion, isGameOver }) {
     setIsDisabled(true);
     
     const isCorrect = option === questionData.answer;
+
+    onAnswer(isCorrect);
+
     setFeedback(isCorrect ? 'correct' : 'incorrect');
     
     // Espera 1 segundo para cambiar pregunta

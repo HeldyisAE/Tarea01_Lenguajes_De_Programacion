@@ -41,3 +41,95 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.endgame-card {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2vh;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 6s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.restart-button {
+  cursor: pointer;
+  background: transparent;
+  height: 10vh;
+  border: 1px solid transparent;
+  transition: transform 0.3s ease;
+  padding: 0;
+  font-size: 2rem;
+  animation: rainbow-animation 6s linear infinite;
+}
+
+.restart-button:active {
+  transform: scale(0.9);
+}
+
+.restart-button:hover {
+  border: 1px solid transparent;
+}
+
+.restart-button:focus,
+.restart-button:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.restart-icon {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  animation: rainbow-animation 6s linear infinite;
+}
+
+.restart-icon:active {
+  transform: scale(0.9);
+}
+
+@keyframes rainbow-animation {
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: cyan;
+  }
+  83% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
+}

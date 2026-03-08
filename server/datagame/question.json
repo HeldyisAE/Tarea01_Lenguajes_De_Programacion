@@ -152,7 +152,7 @@
     },
     {
       "id": 26,
-      "question": "¿Qué película ganó el Oscar a Mejor Película en 1994 y trata sobre Forrest?",
+      "question": "¿Qué película ganó el Oscar a Mejor Película en 1994 protagonizada por Tom Hanks?",
       "answer": "Forrest Gump",
       "distractions": ["Titanic","Gladiator","El Padrino","Braveheart","Jurassic Park","Pulp Fiction","Avatar","Rocky","Matrix"]
     },
@@ -278,7 +278,7 @@
     },
     {
       "id": 47,
-      "question": "¿Qué videojuego popular trata sobre capturar criaturas llamadas Pokémon?",
+      "question": "¿Qué videojuego popular trata sobre capturar y entrenar criaturas?",
       "answer": "Pokémon",
       "distractions": ["Digimon","Yu-Gi-Oh","Monster Hunter","Final Fantasy","Dragon Quest","Persona","Shin Megami Tensei","Ni no Kuni","Temtem"]
     },
