@@ -10,7 +10,7 @@ export default function ResetButton() {
     };
 
   return(
-        <button className="reset-button" onClick={handleReset}>
+        <button className="reset-button" onClick={handleReset} title="Ir a inicio">
             <div className="reset-button-logo">   
                 <PiSpinnerBall size={48} />
             </div> 

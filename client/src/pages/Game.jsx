@@ -145,7 +145,7 @@ function Game() {
                 Aciertos: {score} / {MAX_QUESTIONS}
               </p>
               <p>{win ? "¡Ganaste!" : "Perdiste :("}</p>
-              <button className="restart-button" onClick={restartGame}>
+              <button className="restart-button" onClick={restartGame} title="Volver a jugar">
                 <div className="restart-icon">
                   <VscDebugRestart />
                 </div>  
