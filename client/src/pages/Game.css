@@ -26,8 +26,9 @@
 
 .card-content {
   width: 100%;
-  max-width: 600px;
-  min-height: 250px;
+  max-width: 170vh;
+  min-height: 40vh;
+  margin-top: 10vh;
 
   border-radius: 18px;
   border: 1px solid rgba(63, 60, 60, 0.418);
@@ -39,4 +40,126 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.endgame-card {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 2vh;
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 6s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.restart-button {
+  cursor: pointer;
+  background: transparent;
+  height: 10vh;
+  border: 1px solid transparent;
+  transition: transform 0.3s ease;
+  padding: 0;
+  font-size: 2rem;
+  animation: rainbow-animation 6s linear infinite;
+}
+
+.restart-button:active {
+  transform: scale(0.9);
+}
+
+.restart-button:hover {
+  border: 1px solid transparent;
+}
+
+.restart-button:focus,
+.restart-button:focus-visible {
+  outline: none;
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 11vh;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-content {
+    max-width: 95%;
+    padding: 1.25rem;
+    margin-top: 2vh;
+    border-radius: 12px;
+    gap: 1rem;
+  }
+
+  .endgame-card {
+    font-size: 1.1rem;
+    padding: 1.5vh;
+  }
+
+  .restart-button {
+    height: auto;
+    min-height: 8vh;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.restart-icon {
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  animation: rainbow-animation 6s linear infinite;
+}
+
+.restart-icon:active {
+  transform: scale(0.9);
+}
+
+@keyframes rainbow-animation {
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: cyan;
+  }
+  83% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
 }

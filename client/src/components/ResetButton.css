@@ -41,3 +41,15 @@
   83%  { color: blue; }
   100% { color: violet; }
 }
+
+@media (max-width: 480px) {
+  .reset-button {
+    margin-left: 1rem;
+    height: 8vh;
+    padding: 0.25rem;
+  }
+
+  .reset-button-logo {
+    font-size: 1.5rem;
+  }
+}

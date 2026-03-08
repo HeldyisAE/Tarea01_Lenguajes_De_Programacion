@@ -1,0 +1,304 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Qué selección de fútbol ha ganado más mundiales?",
+      "answer": "Brasil",
+      "distractions": ["Italia","Costa Rica","Argentina","Turquía","Alemania","Francia","Colombia","Inglaterra","Holanda","España"]
+    },
+    {
+      "id": 2,
+      "question": "¿Cuántos jugadores tiene un equipo de fútbol en el campo?",
+      "answer": "11",
+      "distractions": ["9","10","12","7","8","13","6","5","14","15"]
+    },
+    {
+      "id": 3,
+      "question": "¿En qué deporte se utiliza una canasta?",
+      "answer": "Baloncesto",
+      "distractions": ["Fútbol","Béisbol","Tenis","Hockey","Cricket","Rugby","Golf","Natación","Boxeo","Voleibol"]
+    },
+    {
+      "id": 4,
+      "question": "¿Quién ganó el primer mundial de fútbol en 1930?",
+      "answer": "Uruguay",
+      "distractions": ["Brasil","Argentina","Italia","Alemania","España","Chile","Paraguay","México","Francia","Inglaterra"]
+    },
+    {
+      "id": 5,
+      "question": "¿Cuál es el país más grande del mundo?",
+      "answer": "Rusia",
+      "distractions": ["China","Estados Unidos","Brasil","Canadá","India","Australia","Argentina","Kazajistán","México","Mongolia"]
+    },
+    {
+      "id": 6,
+      "question": "¿Cuál es el océano más grande del planeta?",
+      "answer": "Océano Pacífico",
+      "distractions": ["Océano Atlántico","Océano Índico","Océano Ártico","Océano Antártico","Mar Mediterráneo","Mar Caribe","Mar Báltico","Mar Rojo","Mar Negro"]
+    },
+    {
+      "id": 7,
+      "question": "¿En qué continente está Egipto?",
+      "answer": "África",
+      "distractions": ["Asia","Europa","América","Oceanía","Antártida","Medio Oriente","Eurasia","Ártico","Caribe"]
+    },
+    {
+      "id": 8,
+      "question": "¿Cuál es la capital de Japón?",
+      "answer": "Tokio",
+      "distractions": ["Kioto","Osaka","Seúl","Beijing","Bangkok","Shanghái","Manila","Singapur","Taipéi","Hiroshima"]
+    },
+    {
+      "id": 9,
+      "question": "¿Quién descubrió América en 1492?",
+      "answer": "Cristóbal Colón",
+      "distractions": ["Marco Polo","Américo Vespucio","Fernando de Magallanes","Hernán Cortés","James Cook","Vasco da Gama","Napoleón","Leif Erikson","Simón Bolívar"]
+    },
+    {
+      "id": 10,
+      "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+      "answer": "1939",
+      "distractions": ["1914","1929","1945","1935","1941","1950","1905","1930","1920","1948"]
+    },
+    {
+      "id": 11,
+      "question": "¿Quién fue el primer presidente de Estados Unidos?",
+      "answer": "George Washington",
+      "distractions": ["Abraham Lincoln","Thomas Jefferson","John Adams","Theodore Roosevelt","Franklin Roosevelt","Andrew Jackson","James Madison","Woodrow Wilson","Ulysses Grant"]
+    },
+    {
+      "id": 12,
+      "question": "¿Qué civilización construyó las pirámides de Giza?",
+      "answer": "Egipcia",
+      "distractions": ["Romana","Griega","Maya","Azteca","Inca","Babilónica","Persa","Fenicia","China","Cartaginesa"]
+    },
+    {
+      "id": 13,
+      "question": "¿Cuánto es 7 × 8?",
+      "answer": "56",
+      "distractions": ["48","54","64","42","58","50","62","36","46","66"]
+    },
+    {
+      "id": 14,
+      "question": "¿Cuál es la raíz cuadrada de 81?",
+      "answer": "9",
+      "distractions": ["8","7","6","10","12","5","11","4","3","13"]
+    },
+    {
+      "id": 15,
+      "question": "¿Cuánto es 15 + 27?",
+      "answer": "42",
+      "distractions": ["41","43","44","39","40","36","38","45","46","37"]
+    },
+    {
+      "id": 16,
+      "question": "¿Cuánto es 100 dividido entre 4?",
+      "answer": "25",
+      "distractions": ["20","40","24","30","22","26","18","50","12","35"]
+    },
+    {
+      "id": 17,
+      "question": "¿Cuál es el planeta más cercano al Sol?",
+      "answer": "Mercurio",
+      "distractions": ["Venus","Tierra","Marte","Júpiter","Saturno","Urano","Neptuno","Plutón","Ceres","Eris"]
+    },
+    {
+      "id": 18,
+      "question": "¿Cuál es el planeta más grande del sistema solar?",
+      "answer": "Júpiter",
+      "distractions": ["Saturno","Tierra","Neptuno","Urano","Marte","Venus","Mercurio","Plutón","Ceres","Eris"]
+    },
+    {
+      "id": 19,
+      "question": "¿Qué gas respiramos principalmente los humanos?",
+      "answer": "Oxígeno",
+      "distractions": ["Nitrógeno","Helio","Hidrógeno","Dióxido de carbono","Metano","Argón","Ozono","Neón","Kriptón"]
+    },
+    {
+      "id": 20,
+      "question": "¿Qué órgano bombea la sangre en el cuerpo humano?",
+      "answer": "Corazón",
+      "distractions": ["Pulmón","Hígado","Riñón","Estómago","Cerebro","Páncreas","Intestino","Bazo","Vesícula"]
+    },
+    {
+      "id": 21,
+      "question": "¿Qué lenguaje se usa principalmente para páginas web junto con HTML?",
+      "answer": "JavaScript",
+      "distractions": ["Python","C++","Java","Go","Rust","Swift","Kotlin","Ruby","C#"]
+    },
+    {
+      "id": 22,
+      "question": "¿Qué significa CPU?",
+      "answer": "Unidad Central de Procesamiento",
+      "distractions": ["Unidad Central de Programa","Control Principal Universal","Unidad Computacional Primaria","Procesador Universal Central","Sistema Central Programado","Unidad de Memoria Central","Procesador Digital Universal","Unidad de Sistema Central"]
+    },
+    {
+      "id": 23,
+      "question": "¿Qué estructura de datos funciona con LIFO?",
+      "answer": "Pila",
+      "distractions": ["Cola","Lista","Árbol","Grafo","Arreglo","Hash","Tabla","Montículo","Vector"]
+    },
+    {
+      "id": 24,
+      "question": "¿Qué estructura de datos funciona con FIFO?",
+      "answer": "Cola",
+      "distractions": ["Pila","Lista","Árbol","Vector","Arreglo","Tabla","Hash","Grafo","Montículo"]
+    },
+    {
+      "id": 25,
+      "question": "¿Quién dirigió la película Titanic?",
+      "answer": "James Cameron",
+      "distractions": ["Steven Spielberg","Christopher Nolan","Martin Scorsese","Quentin Tarantino","Ridley Scott","Peter Jackson","George Lucas","David Fincher","Clint Eastwood"]
+    },
+    {
+      "id": 26,
+      "question": "¿Qué película ganó el Oscar a Mejor Película en 1994 protagonizada por Tom Hanks?",
+      "answer": "Forrest Gump",
+      "distractions": ["Titanic","Gladiator","El Padrino","Braveheart","Jurassic Park","Pulp Fiction","Avatar","Rocky","Matrix"]
+    },
+    {
+      "id": 27,
+      "question": "¿Quién interpretó a Iron Man en el MCU?",
+      "answer": "Robert Downey Jr.",
+      "distractions": ["Chris Evans","Chris Hemsworth","Tom Holland","Mark Ruffalo","Jeremy Renner","Hugh Jackman","Ryan Reynolds","Benedict Cumberbatch","Paul Rudd"]
+    },
+    {
+      "id": 28,
+      "question": "¿Cuál es el videojuego más vendido de la historia?",
+      "answer": "Minecraft",
+      "distractions": ["GTA V","Tetris","Wii Sports","Fortnite","PUBG","Mario Kart 8","The Sims","Call of Duty","League of Legends"]
+    },
+    {
+      "id": 29,
+      "question": "¿Qué compañía creó la consola PlayStation?",
+      "answer": "Sony",
+      "distractions": ["Nintendo","Microsoft","Sega","Atari","Valve","Panasonic","Philips","Apple","Google"]
+    },
+    {
+      "id": 30,
+      "question": "¿Quién es el protagonista de The Legend of Zelda?",
+      "answer": "Link",
+      "distractions": ["Zelda","Ganondorf","Mario","Samus","Kirby","Fox","Pikachu","Cloud","Kratos"]
+    },
+    {
+      "id": 31,
+      "question": "¿Cuál es el río más largo del mundo?",
+      "answer": "Nilo",
+      "distractions": ["Amazonas","Yangtsé","Misisipi","Danubio","Volga","Ganges","Mekong","Paraná","Orinoco"]
+    },
+    {
+      "id": 32,
+      "question": "¿Qué país tiene forma de bota?",
+      "answer": "Italia",
+      "distractions": ["España","Portugal","Grecia","Turquía","Francia","Croacia","Chile","México","Brasil"]
+    },
+    {
+      "id": 33,
+      "question": "¿Qué científico formuló la teoría de la relatividad?",
+      "answer": "Albert Einstein",
+      "distractions": ["Isaac Newton","Galileo Galilei","Nikola Tesla","Stephen Hawking","Marie Curie","Max Planck","Niels Bohr","Charles Darwin","Johannes Kepler"]
+    },
+    {
+      "id": 34,
+      "question": "¿Qué elemento químico tiene símbolo O?",
+      "answer": "Oxígeno",
+      "distractions": ["Oro","Osmio","Oganesón","Óxido","Ornicio","Olivino","Octano","Ozonio","Olivio"]
+    },
+    {
+      "id": 35,
+      "question": "¿Cuántos lados tiene un hexágono?",
+      "answer": "6",
+      "distractions": ["5","7","8","4","9","10","3","12","11","2"]
+    },
+    {
+      "id": 36,
+      "question": "¿Cuánto es 9 × 9?",
+      "answer": "81",
+      "distractions": ["72","90","99","88","63","70","92","75","84","96"]
+    },
+    {
+      "id": 37,
+      "question": "¿Quién pintó la Mona Lisa?",
+      "answer": "Leonardo da Vinci",
+      "distractions": ["Miguel Ángel","Van Gogh","Picasso","Rembrandt","Dalí","Rafael","Goya","Caravaggio","Botticelli"]
+    },
+    {
+      "id": 38,
+      "question": "¿En qué país nació Adolf Hitler?",
+      "answer": "Austria",
+      "distractions": ["Alemania","Polonia","Hungría","Italia","Suiza","Chequia","Francia","Rusia","Eslovaquia"]
+    },
+    {
+      "id": 39,
+      "question": "¿Qué consola lanzó Nintendo en 2017?",
+      "answer": "Nintendo Switch",
+      "distractions": ["Nintendo Wii","Nintendo 64","GameCube","Nintendo DS","Wii U","Game Boy","SNES","NES","Game Boy Advance"]
+    },
+    {
+      "id": 40,
+      "question": "¿Qué juego popular tiene un modo llamado Battle Royale?",
+      "answer": "Fortnite",
+      "distractions": ["Minecraft","League of Legends","Overwatch","Valorant","CS:GO","Dota 2","Rocket League","Terraria","Among Us"]
+    },
+    {
+      "id": 41,
+      "question": "¿Quién dirigió la trilogía de El Señor de los Anillos?",
+      "answer": "Peter Jackson",
+      "distractions": ["Steven Spielberg","Christopher Nolan","James Cameron","Ridley Scott","George Lucas","Quentin Tarantino","Martin Scorsese","Tim Burton","David Fincher"]
+    },
+    {
+      "id": 42,
+      "question": "¿Cuál es el satélite natural de la Tierra?",
+      "answer": "La Luna",
+      "distractions": ["Europa","Titán","Ío","Ganímedes","Fobos","Deimos","Calisto","Encélado","Tritón"]
+    },
+    {
+      "id": 43,
+      "question": "¿Qué lenguaje de programación se usa mucho para ciencia de datos?",
+      "answer": "Python",
+      "distractions": ["C","Assembly","Pascal","Cobol","Ada","Delphi","Fortran","Scratch","Lua"]
+    },
+    {
+      "id": 44,
+      "question": "¿Qué empresa desarrolla el sistema operativo Windows?",
+      "answer": "Microsoft",
+      "distractions": ["Apple","Google","IBM","Oracle","Intel","AMD","Samsung","Sony","Dell"]
+    },
+    {
+      "id": 45,
+      "question": "¿En qué deporte se usa una raqueta y una pelota amarilla?",
+      "answer": "Tenis",
+      "distractions": ["Béisbol","Cricket","Ping pong","Golf","Hockey","Squash","Rugby","Balonmano","Badminton"]
+    },
+    {
+      "id": 46,
+      "question": "¿Cuál es la montaña más alta del mundo?",
+      "answer": "Everest",
+      "distractions": ["K2","Kangchenjunga","Aconcagua","Makalu","Lhotse","Denali","Mont Blanc","Elbrus","Annapurna"]
+    },
+    {
+      "id": 47,
+      "question": "¿Qué videojuego popular trata sobre capturar y entrenar criaturas?",
+      "answer": "Pokémon",
+      "distractions": ["Digimon","Yu-Gi-Oh","Monster Hunter","Final Fantasy","Dragon Quest","Persona","Shin Megami Tensei","Ni no Kuni","Temtem"]
+    },
+    {
+      "id": 48,
+      "question": "¿Quién es el personaje principal de la saga God of War?",
+      "answer": "Kratos",
+      "distractions": ["Zeus","Ares","Hades","Thor","Loki","Baldur","Atreus","Odin","Poseidón"]
+    },
+    {
+      "id": 49,
+      "question": "¿Qué metal tiene símbolo químico Fe?",
+      "answer": "Hierro",
+      "distractions": ["Plata","Oro","Cobre","Aluminio","Zinc","Estaño","Níquel","Plomo","Titanio"]
+    },
+    {
+      "id": 50,
+      "question": "¿Cuántos bits tiene un byte?",
+      "answer": "8",
+      "distractions": ["4","16","32","2","64","12","6","10","24","1"]
+    }
+  ]
+}

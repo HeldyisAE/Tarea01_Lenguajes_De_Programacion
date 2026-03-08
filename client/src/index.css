@@ -28,6 +28,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -64,5 +65,16 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
   }
 }

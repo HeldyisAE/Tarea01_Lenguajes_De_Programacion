@@ -1,17 +1,65 @@
 .input-content {
     width: 50vh;
     height: 10vh;
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
 
 .input-content input {
     width: 50vh;
     height: 5vh;
     border-radius: 15px;
-    border: 2px solid white;
-    background-color: transparent;
+    border: 2px solid transparent;
+    background:
+    linear-gradient(black, black) padding-box,
+    linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      cyan,
+      blue,
+      violet
+    ) border-box;
+
+  background-size: 100% 100%, 400% 400%;
+
+  animation: rainbow-border 6s linear infinite;
+}
+
+@keyframes rainbow-border {
+  0% {
+    background-position: 0% 50%, 0% 50%;
+  }
+  50% {
+    background-position: 0% 50%, 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%, 0% 50%;
+  }
+}
+
+.input-content input:focus,
+.input-content input:focus-visible {
+  outline: none;
+  border-color: transparent;
 }
 
 .input-content input::placeholder {
     color: rgba(245, 245, 220, 0.712);
+}
+
+@media (max-width: 480px) {
+  .input-content {
+    width: 85vw;
+    height: auto;
+    margin-top: 8vh;
+  }
+
+  .input-content input {
+    width: 100%;
+    height: 45px;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
 }

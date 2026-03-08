@@ -1,0 +1,56 @@
+.record-button {
+    cursor: pointer;
+    background: transparent;
+    margin-left: 2vh;
+    height: 10vh;
+    border: 1px solid transparent;
+    transition: transform 0.3s ease;
+    padding: 0
+}
+
+.record-button:active {
+    transform: scale(0.9);
+}
+    
+.record-button:hover {
+    border: 1px solid transparent;
+    transform: scale(1.15);
+}
+
+.record-button:focus,
+.record-button:focus-visible {
+    outline: none;
+    border: none;
+}
+
+.record-icon {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    animation: rainbow-animation 6s linear infinite;
+}
+
+.record-icon:active {
+    transform: scale(0.9);
+}
+
+@keyframes rainbow-animation {
+  0%   { color: red; }
+  16%  { color: orange; }
+  33%  { color: yellow; }
+  50%  { color: green; }
+  66%  { color: cyan; }
+  83%  { color: blue; }
+  100% { color: violet; }
+}
+
+@media (max-width: 480px) {
+  .record-button {
+    margin-left: 1rem;
+    height: 8vh;
+    padding: 0.25rem;
+  }
+
+  .record-icon {
+    font-size: 1.5rem;
+  }
+}
