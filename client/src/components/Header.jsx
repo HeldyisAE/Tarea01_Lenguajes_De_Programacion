@@ -5,7 +5,9 @@ import PlayerTag from './PlayerTag';
 import RecordButton from './RecButton';
 
 
+
 export default function Header({ onOpenHistory }) {
+
     const location = useLocation()
     const isGame = location.pathname === "/game"
     const isHome = location.pathname === "/"
@@ -20,6 +22,7 @@ export default function Header({ onOpenHistory }) {
             </div>
             <div className="header-right">
                 {isHome && <RecordButton onOpenHistory={onOpenHistory} />}
+
                 {isGame && <PlayerTag />}
             </div>
         </header>
