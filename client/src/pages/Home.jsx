@@ -4,11 +4,13 @@ import { PlayerContext } from "../contexts/PlayerContext";
 import Header from "../components/Header";
 import InputName from "../components/InputName";
 import StartButton from "../components/StartButton";
+import HistoryPanel from "../components/HistoryPanel";
 import "./Home.css"
 
 function Home() {
   const [msg, setMsg] = useState("");
   const [name, setName] = useState("");
+  const [showHistory, setShowHistory] = useState(false);
   const navigate = useNavigate();
   const { setPlayerName } = useContext(PlayerContext);
 
@@ -31,7 +33,7 @@ function Home() {
   return (
     <div className="container">
       <div className="top-container"> 
-        <Header />
+        <Header onOpenHistory={() => setShowHistory(true)} />
       </div>
       <div className="card">
         <div className="card-content">
@@ -39,6 +41,7 @@ function Home() {
           <StartButton onStart={handleStart} />
         </div>
       </div>
+      <HistoryPanel isOpen={showHistory} onClose={() => setShowHistory(false)} />
     </div>
 
   )
