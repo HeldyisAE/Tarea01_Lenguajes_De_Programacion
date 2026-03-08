@@ -11,21 +11,39 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-
     padding: 12px 24px;
-
     font-size: 1.1rem;
     font-weight: 600;
-
     border-radius: 10px;
     border: none;
-
     cursor: pointer;
-
     background-color: #1f1f23;
-    color: white;
-
+    animation: rainbow-animation 6s linear infinite;
     transition: all 0.25s ease;
+}
+
+@keyframes rainbow-animation {
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: cyan;
+  }
+  83% {
+    color: blue;
+  }
+  100% {
+    color: violet;
+  }
 }
 
 .start-button:hover {
