@@ -100,6 +100,36 @@
   border: none;
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding-top: 11vh;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-content {
+    max-width: 95%;
+    padding: 1.25rem;
+    margin-top: 2vh;
+    border-radius: 12px;
+    gap: 1rem;
+  }
+
+  .endgame-card {
+    font-size: 1.1rem;
+    padding: 1.5vh;
+  }
+
+  .restart-button {
+    height: auto;
+    min-height: 8vh;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
 .restart-icon {
   cursor: pointer;
   transition: transform 0.5s ease;

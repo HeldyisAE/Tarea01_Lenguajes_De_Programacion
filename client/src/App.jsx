@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect, useRef } from "react";
 import Home from "./pages/Home";
 import Game from "./pages/Game";
 import "./App.css";
@@ -13,12 +14,24 @@ import bgMusicFile from "./assets/Pregunta2__Soundtrack.mp3";
  */
 
 function App() {
+  const audioRef = useRef(null);
+
+  //Inicia la música luego de que el usuario interactua con la web
+  useEffect(() => {
+    const startMusic = () => {
+      if (audioRef.current) {
+        audioRef.current.play().catch(() => {});
+      }
+      document.removeEventListener("click", startMusic);
+    };
+
+    document.addEventListener("click", startMusic);
+  }, []);
+
   return (
     <>
-      {/* Música de fondo, siempre activa */}
-      <audio autoPlay loop>
+      <audio ref={audioRef} loop>
         <source src={bgMusicFile} type="audio/mp3" />
-        Tu navegador no soporta audio
       </audio>
 
       <Routes>

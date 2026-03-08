@@ -79,6 +79,23 @@
   pointer-events: none;
 }
 
+@media (max-width: 480px) {
+  .question-box {
+    min-height: 70px;
+    padding: 10px 12px;
+    margin-bottom: 3vh;
+    font-size: 1rem;
+  }
+
+  .option-boxes {
+    min-height: 70px;
+    padding: 10px 12px;
+    gap: 2vh;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
 .option-boxes button {
   padding: 12px 20px;
   font-size: 1.2rem;

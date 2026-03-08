@@ -149,6 +149,42 @@
   font-size: 0.95rem;
 }
 
+@media (max-width: 480px) {
+  .history-overlay {
+    padding: 0.5rem;
+  }
+
+  .history-panel {
+    padding: 1.25rem;
+    max-width: 95vw;
+    max-height: 85vh;
+    border-radius: 12px;
+  }
+
+  .history-panel h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .close-button {
+    top: 0.8rem;
+    right: 0.8rem;
+    min-width: 36px;
+    min-height: 36px;
+    font-size: 1.2rem;
+  }
+
+  .games-table th {
+    padding: 8px;
+    font-size: 0.75rem;
+  }
+
+  .games-table td {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+}
+
 .games-table tbody tr {
   transition: background 0.2s ease;
 }

@@ -60,3 +60,19 @@
     align-items: center;
     font-size: 1.3rem;
 }
+
+@media (max-width: 480px) {
+  .btn-content {
+    margin-bottom: 3vh;
+  }
+
+  .start-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+}

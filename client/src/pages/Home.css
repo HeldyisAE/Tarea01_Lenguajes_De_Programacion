@@ -41,3 +41,21 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 11vh;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .card-content {
+    max-width: 95%;
+    min-height: 200px;
+    margin-bottom: 8vh;
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+}

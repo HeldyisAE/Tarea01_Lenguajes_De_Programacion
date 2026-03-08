@@ -75,3 +75,26 @@
   justify-content: flex-end;
   padding-right: 5vh;
 }
+
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 5px;
+    height: auto;
+  }
+
+  .header-center {
+    position: relative;
+    left: auto;
+    padding-right: 2vh;
+  }
+
+  .header-center h2 {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .header-right {
+    padding-right: 2vh;
+    gap: 0.5rem;
+  }
+}

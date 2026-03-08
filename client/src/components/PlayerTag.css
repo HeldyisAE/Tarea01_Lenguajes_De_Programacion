@@ -45,3 +45,11 @@
 .player-tag:hover {
   transform: scale(0.95);
 }
+
+@media (max-width: 480px) {
+  .player-tag {
+    padding: 1px 3px;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+  }
+}
