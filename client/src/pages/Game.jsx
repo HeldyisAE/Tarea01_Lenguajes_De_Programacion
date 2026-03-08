@@ -18,7 +18,6 @@ function Game() {
   const [questionsUsed, setQuestionsUsed] = useState([]);
 
   useEffect(() => {
-    
     fetch("http://localhost:3000/api/questions")
       .then((response) => response.json())
       .then((data) => {
