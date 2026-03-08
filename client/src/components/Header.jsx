@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom'
 import './Header.css'
 import ResetButton from './ResetButton';
 import PlayerTag from './PlayerTag';
-import RecordButton from './RecordButton';
+import RecordButton from './RecButton';
 
 
 export default function Header() {

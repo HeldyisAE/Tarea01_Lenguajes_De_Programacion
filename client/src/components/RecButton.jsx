@@ -1,5 +1,5 @@
 import { TbHistory } from "react-icons/tb";
-import "./RecordButton.css"
+import "./RecButton.css"
 
 function RecordButton() {
 
