@@ -9,7 +9,7 @@
  */
 
 const admin = require("firebase-admin");
-const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
+const serviceAccount = require("./firebaseKey.json");
 
 //Inicializa firebase admin con la clave
 admin.initializeApp({
