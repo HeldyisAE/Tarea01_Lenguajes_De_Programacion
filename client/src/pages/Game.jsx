@@ -1,11 +1,13 @@
 import "./Game.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { VscDebugRestart } from "react-icons/vsc";
 import QuestionBox from "../components/QuestionBox";
 import Header from "../components/Header";
+import { PlayerContext } from "../contexts/PlayerContext";
 
 
 function Game() {
+  const { playerName } = useContext(PlayerContext);
   const [currentIndex, setCurrentIndex] = useState(null);
   const [questionsData, setQuestionsData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -16,6 +18,7 @@ function Game() {
   const [questionsUsed, setQuestionsUsed] = useState([]);
 
   useEffect(() => {
+    
     fetch("http://localhost:3000/api/questions")
       .then((response) => response.json())
       .then((data) => {
@@ -33,6 +36,31 @@ function Game() {
         setLoading(false);
       });
   }, []);
+
+  const saveGame = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/api/games", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          player: playerName,
+          score: score,
+          result: score >= 6 ? "win" : "lose"
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error("Error al guardar la partida");
+      }
+
+      const data = await response.json();
+      console.log("Partida guardada:", data);
+    } catch (error) {
+      console.error("Error guardando la partida:", error);
+    }
+  };
 
   const handleNextQuestion = () => {
     if (!questionsData) return;
@@ -66,12 +94,20 @@ function Game() {
     setQuestionsUsed([randomIndex]);
     setCurrentIndex(randomIndex);
   }
+
+  const isGameOver = questionCount > MAX_QUESTIONS;
+
+  // Llamar a saveGame cuando el juego termina
+  useEffect(() => {
+    if (isGameOver && score > 0) {
+      saveGame();
+    }
+  }, [isGameOver]);
   
   if (loading) return <div>Cargando preguntas...</div>;
   if (error) return <div>Error: {error.message}</div>;
   if (!questionsData || currentIndex === null) return <div>No hay preguntas disponibles</div>;
 
-  const isGameOver = questionCount > MAX_QUESTIONS;
   const win = score >= 6;
 
   return (
