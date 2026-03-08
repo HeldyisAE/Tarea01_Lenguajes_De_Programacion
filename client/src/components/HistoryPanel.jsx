@@ -2,6 +2,17 @@ import { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import "./HistoryPanel.css";
 
+/**
+ * Componente visual desplegado al presionare el botón recButton
+ * Contiene y renderiza la información del historial de partidas
+ * 
+ * @param {Object} props - Propiedades del componente
+ * @param {Boolean} props.isOpen - Define si el componente está desplegado
+ * @param {Function} props.onClose - Define si el componente está cerrado
+ * @returns {JSX.Element|null} Elemento JSX que representa el componente o null si está cerrado
+ */
+
+
 function HistoryPanel({ isOpen, onClose }) {
   const [games, setGames] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -5,8 +5,14 @@ import Header from "../components/Header";
 import InputName from "../components/InputName";
 import StartButton from "../components/StartButton";
 import HistoryPanel from "../components/HistoryPanel";
-
 import "./Home.css"
+
+/**
+ * Componente lobby que recibe al jugador al ingresar a la web
+ * Maneja la captura del nombre del jugador, inicia el juego y redirige al jugador al juego
+ * 
+ * @returns {JSX.Element} Elemento JSX que representa la pantalla lobby del juego
+ */
 
 function Home() {
   const [msg, setMsg] = useState("");
@@ -16,18 +22,21 @@ function Home() {
   const navigate = useNavigate();
   const { setPlayerName } = useContext(PlayerContext);
 
+  //Maneja la conexión con el servidor
   useEffect(() => {
     fetch("/api")
       .then(res => res.text())
       .then(data => setMsg(data));
   }, []);
 
+  //Maneja el comportamiento al presionar el botón de start
   function handleStart() {
-    if (name.trim() === "") {
+    if (name.trim() === "") { //Verificación por si el input está vacío
       alert("Debes ingresar un nombre");
       return;
     }
 
+    //Setea el nombre del jugador y redirige a la pantalla de juego
     setPlayerName(name);
     navigate("/game");
   }
