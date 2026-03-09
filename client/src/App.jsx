@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Home from "./pages/Home";
 import Game from "./pages/Game";
 import "./App.css";
-import bgMusicFile from "./assets/Pregunta2__Soundtrack.mp3";
+import bgMusicFile from "./assets/Pregunta2__Soundtrack.m4a";
 
 /**
  * Componente principal de la app
